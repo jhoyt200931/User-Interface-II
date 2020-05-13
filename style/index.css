@@ -49,6 +49,7 @@ table {
 body {
     background-color: antiquewhite;
     border: 10px solid cornflowerblue;
+    box-sizing: border-box;
 }
 .heading {
     display: flex;
@@ -131,4 +132,38 @@ p {
 
 button {
     font-size: 15px;
+}
+img {
+    height: 75%;
+    width: 75%;
+}
+.projectPreview img {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+span{
+    margin: 20px;
+}
+.previewText{
+    text-align: center;
+    margin: 5% 10%;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+.row1 {
+    display: flex;
+
+}
+.row2 {
+    display: flex;
+}
+.column1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.column2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
