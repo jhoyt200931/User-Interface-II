@@ -128,3 +128,8 @@ img {
     flex-direction: column;
     text-align: center;
 }
+@media(mad-width: 500px) {
+    footer {
+        justify-content: flex-start;
+    }
+}
