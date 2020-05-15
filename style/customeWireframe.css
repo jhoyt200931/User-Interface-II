@@ -46,13 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html {
+    font-size: 62.5%;
+}
 body {
     background-color: antiquewhite;
     border: 10px solid cornflowerblue;
     box-sizing: border-box;
 }
 h1 {
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -62,7 +65,7 @@ h1 {
     color: navy;
 }
 h2 {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bold;
     text-decoration: underline;
     margin: 5px 5%;
@@ -72,7 +75,7 @@ h2 {
 }
 .otherSpans {
     margin: 5px 5%;
-    font-size: 20px;
+    font-size: 2rem;
 }
 p {
     font-size: 18px;
@@ -88,19 +91,19 @@ ul {
 a {
     display: block;
     margin: 20px 0 20px 5%;
-    font-size: 30px;
+    font-size: 3rem;
 }
 #email {
-    font-size: 30px;
+    font-size: 3rem;
     text-decoration: underline;
     margin-left: 5%;
 }
 span {
-    font-size: 30px;
+    font-size: 3rem;
 }
 footer h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 3.5rem;
     color: navy;
 }
 img {
@@ -128,8 +131,45 @@ img {
     flex-direction: column;
     text-align: center;
 }
-@media(mad-width: 500px) {
-    footer {
-        justify-content: flex-start;
+@media(max-width: 800px) {
+    p {
+        text-align: justify;
+        width: 65%;
+        padding: 5px;
+        line-height: 1.1;
+        font-size: 1.7rem;
+        }
+        .previewText {
+            font-size: 1.7rem;
+        }
+}
+@media(max-width: 500px) {
+   .div2 {
+       width: 100%;
+       justify-content: space-evenly;
+   }
+   p {
+    text-align: justify;
+    width: 65%;
+    padding: 5px;
+    line-height: 1;
+    font-size: 1.6rem;
+    }
+    .previewText {
+        font-size: 1.6rem;
+    }
+
+    img {
+        height: 50%;
+    }
+    a {
+        margin: 10px;
+    }
+    span {
+        font-size: 2rem;
+        margin: 0 3%;
+    }
+    .otherSpans {
+        font-size: 2rem;
     }
 }
