@@ -54,7 +54,7 @@ body {
     background-color: antiquewhite;
     border: 10px solid cornflowerblue;
     box-sizing: border-box;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -146,6 +146,7 @@ img {
     height: 75%;
     width: 75%;
     margin: 5px 12.5% 5px 12.5%;
+    border-radius: 5px;
 }
    
 span{
@@ -176,6 +177,18 @@ span{
     flex-direction: column;
     text-align: center;
 }
+@media(max-width: 800px) {
+    p {
+        text-align: justify;
+        width: 65%;
+        padding: 5px;
+        line-height: 1.1;
+        font-size: 1.7rem;
+        }
+        .previewText {
+            font-size: 1.7rem;
+        }
+}
 @media(max-width: 500px) {
    .div2 {
        width: 100%;
@@ -187,4 +200,20 @@ span{
        padding: 2px;
        margin: 3px 0 2px 0;
    }
+   p {
+    text-align: justify;
+    width: 65%;
+    padding: 5px;
+    line-height: 1;
+    font-size: 1.6rem;
+    }
+    .previewText {
+        font-size: 1.6rem;
+    }
+    img {
+        height: 50%;
+    }
+    a {
+        margin: 10px;
+    }
 }
